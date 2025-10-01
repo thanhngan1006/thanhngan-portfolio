@@ -6,7 +6,7 @@ A clean, beautiful, and responsive portfolio website built with Next.js, Tailwin
 
 ## Live Demo
 
-Check out the live version here: **[your-portfolio-link.com](https://thanhngan-portfolio.vercel.app/)**
+Check out the live version here: **[thanhngan](https://thanhngan-portfolio.vercel.app/)**
 
 ---
 
