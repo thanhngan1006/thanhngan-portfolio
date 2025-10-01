@@ -1,79 +1,65 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
+# My Personal Portfolio Website
 
-### Live - https://react-portfolio-template.netlify.app
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
-### Open Source UI Components - https://ui.chetanverma.com/
+A clean, beautiful, and responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This project showcases my skills, past work, and professional experience.
 
-### Tutorials
+![Portfolio Screenshot](./public/screenshot.png)
 
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
+## Live Demo
 
-Blog - https://www.chetanverma.com/blog/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+Check out the live version here: **[your-portfolio-link.com](https://thanhngan-portfolio.vercel.app/)**
 
-### Features - 
+---
 
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
+## 🚀 Key Features
 
+- **Fully Responsive Design:** Looks great on all devices, from mobile phones to desktops.
+- **Interactive Animations:** Smooth page transitions and hover effects using Framer Motion.
+- **Dark/Light Mode:** A theme toggler for a personalized viewing experience.
+- **Dynamic Project & Service Data:** All content is loaded from a central JSON file, making it easy to update.
+- **Resume Section:** Displays professional experience and education in a clear, readable format.
 
-### Sections
+---
 
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
+## 🛠️ Tech Stack
 
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-### How To Use
+---
 
-- Clone this repo
-- run `yarn`
-- `yarn dev`
+## ⚙️ Getting Started
 
+To get a local copy up and running, please follow these simple steps.
 
-### How To Deploy - 
+### Prerequisites
 
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
+Make sure you have Node.js and npm installed on your machine.
 
-Quickes way to deploy this repo - 
+- Node.js (v16 or later)
+- npm
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
+### Installation
 
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/thanhngan1006/thanhngan-portfolio.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd thanhngan-portfolio
+    ```
+3.  **Install dependencies:**
+    _(Lưu ý: Template này có thể có các gói cũ, hãy sử dụng cờ --legacy-peer-deps nếu gặp lỗi ERESOLVE)_
+    ```bash
+    npm install --legacy-peer-deps
+    ```
 
-### How To Contribute - 
+### Running the Application
 
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
+To start the development server, run the following command:
 
-
-### Tech Stack Used - 
-- Next.js
-- TailwindCSS
-
-
-### Thanks
-
-If you liked this portfolio template, don't forget to give it a ⭐.
-
-## Awesome Contributors
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
-
-## Supporting
-Many hours of hard work have gone into this project. Your support will be very appreciated!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
-
-
-
-
-
-
+```bash
+npm run dev
+```
