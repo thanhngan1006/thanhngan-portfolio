@@ -2,11 +2,11 @@
 
 A clean, beautiful, and responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This project showcases my skills, past work, and professional experience.
 
-![Portfolio Screenshot](./public/screenshot.png)
+<img width="1680" height="829" alt="image" src="https://github.com/user-attachments/assets/16c1f6d7-8416-4fcc-985b-5b9e930ffdd8" />
 
 ## Live Demo
 
-Check out the live version here: **[thanhngan](https://thanhngan-portfolio.vercel.app/)**
+Check out the live version here: **[thanhngan-portfolio](https://thanhngan-portfolio.vercel.app/)**
 
 ---
 
