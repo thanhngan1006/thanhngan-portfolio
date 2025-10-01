@@ -2,7 +2,8 @@
 
 A clean, beautiful, and responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This project showcases my skills, past work, and professional experience.
 
-![Portfolio Screenshot](./public/screenshot.png)
+![Uploading image.png…]()
+
 
 ## Live Demo
 
