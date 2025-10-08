@@ -25,7 +25,7 @@
     {
       "id": "1",
       "title": "Realtime Chat Website",
-      "description": "React.js, Vite, Tailwind CSS",
+      "description": "React.js, Vite, Tailwind CSS, Firebase",
       "imageSrc": "https://i.postimg.cc/j2MNdmn5/Screenshot-2025-10-08-at-15-35-19.png",
       "url": "https://github.com/thanhngan1006/realtime-chat-website"
     },

@@ -1,7 +1,3 @@
-// /components/TechTag.jsx
-
-import React from "react";
-// Bạn cần cài đặt thư viện react-icons nếu chưa có: npm install react-icons
 import {
   FaReact,
   FaJsSquare,
@@ -10,6 +6,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaMobileAlt,
+  FaFire,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -19,9 +16,8 @@ import {
   SiMongodb,
 } from "react-icons/si";
 
-// Định nghĩa màu sắc và icon cho từng công nghệ
 const getTechConfig = (tech) => {
-  const lowerTech = tech.toLowerCase().replace(/[^a-z0-9]/g, ""); // Loại bỏ dấu chấm, khoảng trắng
+  const lowerTech = tech.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   switch (lowerTech) {
     case "reactjs":
@@ -67,6 +63,13 @@ const getTechConfig = (tech) => {
         color: "bg-green-500 dark:bg-green-800",
         text: "text-white",
       };
+    case "firebase":
+      return {
+        icon: FaFire,
+        color: "bg-red-500 dark:bg-green-800",
+        text: "text-white",
+      };
+
     case "vite":
       return {
         icon: SiVite,
