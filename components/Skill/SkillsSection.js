@@ -24,8 +24,12 @@ const SkillsSection = () => {
         {/* Icon lớn và nổi bật */}
         <FaCode className={`w-16 h-16 mb-4 ${ACCENT_COLOR_CLASS}`} />
 
-        <h1 className={`text-4xl font-extrabold mb-2 ${TEXT_COLOR_CLASS}`}>
+        {/* <h1 className={`text-4xl font-extrabold mb-2 ${TEXT_COLOR_CLASS}`}>
           Core Skills
+        </h1> */}
+
+        <h1 className="text-4xl font-extrabold mb-10 text-bold">
+          Core Skills.
         </h1>
 
         <p className="text-lg text-gray-500 dark:text-gray-400 max-w-lg text-center">
