@@ -17,8 +17,7 @@ const CORE_VALUES = [
   },
   {
     title: "Code Integrity",
-    description:
-      "Writing clean, scalable, and maintainable code with TypeScript.",
+    description: "Writing clean, scalable, and maintainable code.",
     icon: FaLaptopCode,
   },
   {
