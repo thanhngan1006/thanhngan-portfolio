@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
 
-module.exports = nextConfig
+  images: {
+    domains: [
+      "i.postimg.cc",
+      // Thêm các domain khác nếu có (ví dụ: 'googleusercontent.com')
+    ],
+  },
+};
+
+module.exports = nextConfig;

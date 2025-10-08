@@ -13,6 +13,7 @@ import Cursor from "../components/Cursor";
 
 // Local Data
 import data from "../data/portfolio.json";
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
   // Ref
@@ -40,13 +41,13 @@ export default function Home() {
     });
   };
 
-  useIsomorphicLayoutEffect(() => {
-    stagger(
-      [textOne.current, textTwo.current, textThree.current, textFour.current],
-      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
-    );
-  }, []);
+  // useIsomorphicLayoutEffect(() => {
+  //   stagger(
+  //     [textOne.current, textTwo.current, textThree.current, textFour.current],
+  //     { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
+  //     { y: 0, x: 0, transform: "scale(1)" }
+  //   );
+  // }, []);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -63,7 +64,16 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
+
+        <HeroSection
+          name={data.name}
+          role={data.headerTaglineOne} // Lấy một Tagline làm vai trò chính
+          tags={data.tags} // Giả định bạn thêm trường 'tags' vào portfolio.json cho TypeAnimation
+          about={data.aboutpara} // Sử dụng đoạn giới thiệu ngắn
+          imageSrc="/images/mon.jpg" // Giả định bạn thêm trường 'heroImage' vào portfolio.json
+        />
+
+        {/* <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
             <h1
               ref={textOne}
@@ -92,11 +102,33 @@ export default function Home() {
           </div>
 
           <Socials className="mt-2 laptop:mt-5" />
-        </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+        </div> */}
+
+        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {data.projects.map((project) => (
+              <WorkCard
+                key={project.id}
+                img={project.imageSrc}
+                name={project.title}
+                description={project.description}
+                onClick={() => window.open(project.url)}
+              />
+            ))}
+          </div>
+        </div> */}
+
+        <div className="mt-20 laptop:mt-40 p-2 laptop:p-0" ref={workRef}>
+          {/* Tăng khoảng cách margin-top để tách biệt với Hero Section */}
+
+          {/* Tiêu đề Work to và đậm hơn, đồng bộ với About */}
+          <h1 className="text-4xl font-extrabold mb-12 text-white">Work.</h1>
+
+          {/* Lưới dự án */}
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-8">
+            {/* Tăng gap từ gap-4 lên gap-8 để Card không bị dính nhau */}
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
