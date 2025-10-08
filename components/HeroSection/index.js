@@ -148,6 +148,7 @@ const HeroSection = ({ name, role, tags, about, imageSrc }) => {
         {/* Khoảng cách lớn hơn */}
         <Link href="#contact" passHref legacyBehavior>
           <Button
+            onClick={() => window.open("mailto:thanhngan10604@gmail.com")}
             type="primary"
             className={`!bg-cyan-500 text-black font-extrabold py-4 px-10 text-lg rounded-full 
                         hover:!bg-cyan-600 transition duration-300 ${ACCENT_SHADOW_CLASS}
