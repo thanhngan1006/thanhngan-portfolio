@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard"; // Import SkillCard
 import { FaCode } from "react-icons/fa"; // Icon cho tiêu đề
 
 const SKILLS_LIST = [
-  "React.js",
+  "Reactjs",
   "Typescript",
   "Dart",
   "Tailwind CSS",

@@ -25,7 +25,7 @@
     {
       "id": "1",
       "title": "Realtime Chat Website",
-      "description": "React.js, Vite, Tailwind CSS, Firebase",
+      "description": "Reactjs, Vite, Tailwind CSS, Firebase",
       "imageSrc": "https://i.postimg.cc/j2MNdmn5/Screenshot-2025-10-08-at-15-35-19.png",
       "url": "https://github.com/thanhngan1006/realtime-chat-website"
     },
@@ -48,7 +48,7 @@
     {
       "id": "1",
       "title": "Frontend Development",
-      "description": "Building responsive, user-friendly web interfaces with modern frameworks like React.js and Typescript."
+      "description": "Building responsive, user-friendly web interfaces with modern frameworks like Reactjs and Typescript."
     },
     {
       "id": "3",
@@ -108,7 +108,7 @@
       "Dart"
     ],
     "frameworks": [
-      "React.js",
+      "Reactjs",
       "Node.js (ExpressJS)",
       "FastAPI",
       "Flutter"
