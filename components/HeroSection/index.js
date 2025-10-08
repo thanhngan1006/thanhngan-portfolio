@@ -30,18 +30,16 @@ const HeroSection = ({ name, role, tags, about, imageSrc }) => {
   ).slice(0, -1);
 
   return (
-    // Toàn bộ Hero Section sẽ có nền đen hoặc xám đậm
     <section
       className="flex flex-col md:flex-row items-center justify-center min-h-screen 
-                 px-6 py-16 md:py-12 bg-gray-900 md:bg-black w-full" // Màu nền đen/xám cho section
+                 px-6 py-16 md:py-12 bg-gray-900 md:bg-black w-full"
     >
-      {/* Cột 1: Ảnh đại diện */}
       <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative order-2 md:order-1">
         <div
           className={`w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden 
                       border-4 ${BORDER_COLOR_CLASS} shadow-xl 
                       transition duration-500 ease-in-out transform hover:scale-105 ${ACCENT_SHADOW_CLASS}
-                      relative bg-gray-800`} // Thêm bg-gray-800 cho div chứa ảnh để ảnh luôn có nền tối
+                      relative bg-gray-800`}
         >
           <Image
             src={imageSrc}
@@ -53,18 +51,12 @@ const HeroSection = ({ name, role, tags, about, imageSrc }) => {
         </div>
       </div>
 
-      {/* Cột 2: Thông tin giới thiệu */}
       <div className="md:w-1/2 text-center md:text-left order-1 md:order-2 md:pl-16 lg:pl-24">
-        {/* Đổi thứ tự ở mobile: text trên ảnh */}
         <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold mb-4 text-white leading-tight">
-          {" "}
-          {/* Kích thước chữ lớn hơn */}
           Hi, I&apos;m{" "}
           <span className={ACCENT_COLOR_CLASS}>{name || "Thanh Ngan"}</span>
         </h1>
         <h3 className="text-2xl sm:text-4xl lg:text-5xl font-semibold mb-8 text-gray-200 leading-snug">
-          {" "}
-          {/* Kích thước chữ lớn hơn */}
           I&apos;m a{" "}
           <span className={ACCENT_COLOR_CLASS}>
             <TypeAnimation
@@ -75,13 +67,10 @@ const HeroSection = ({ name, role, tags, about, imageSrc }) => {
           </span>
         </h3>
         <p className="text-base sm:text-xl mb-10 text-gray-400 max-w-xl mx-auto md:mx-0 leading-relaxed">
-          {" "}
-          {/* Kích thước chữ lớn hơn, max-width cho đoạn văn */}
           {about ||
             "Aspiring Frontend Developer passionate about creating responsive, user-friendly interfaces for both web and mobile applications. Seeking opportunities to apply modern frameworks and grow in a collaborative development environment."}
         </p>
         <Socials className="mb-8 flex justify-center md:justify-start" />{" "}
-        {/* Khoảng cách lớn hơn */}
         <Link href="#contact" passHref legacyBehavior>
           <Button
             onClick={() => window.open("mailto:thanhngan10604@gmail.com")}

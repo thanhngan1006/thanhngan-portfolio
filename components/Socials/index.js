@@ -1,38 +1,12 @@
-// import React from "react";
-// import Button from "../Button";
-
-// import yourData from "../../data/portfolio.json";
-
-// const Socials = ({ className }) => {
-//   return (
-//     <div className={`${className} flex flex-wrap mob:flex-nowrap link`}>
-//       {yourData.socials.map((social, index) => (
-//         <Button key={index} onClick={() => window.open(social.link)}>
-//           {social.title}
-//         </Button>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Socials;
-
-// /components/Socials.jsx
-
-import React from "react";
 import Link from "next/link";
-// Giả định bạn sẽ sử dụng react-icons hoặc icon SVG
-// import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 import data from "../../data/portfolio.json";
 import { FaBlog, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 const getSocialIcon = (title) => {
-  // Chuyển title về chữ thường để so sánh không phân biệt hoa thường
   const lowerCaseTitle = title.toLowerCase();
 
-  // Bạn có thể tùy chỉnh kích thước icon tại đây (w-5 h-5)
   const iconProps = { className: "w-5 h-5" };
 
   switch (lowerCaseTitle) {
@@ -47,12 +21,10 @@ const getSocialIcon = (title) => {
     case "email":
       return <AiOutlineMail {...iconProps} />;
     default:
-      // Trả về null hoặc một icon mặc định nếu không khớp
       return null;
   }
 };
 const Socials = ({ className = "" }) => {
-  // Giả định data.socials là một mảng các đối tượng { id, name, link }
   const socials = data.socials || [];
 
   return (

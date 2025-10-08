@@ -1,6 +1,3 @@
-// /components/CoreValuesCard.jsx
-
-import React from "react";
 import {
   FaHeart,
   FaLightbulb,
@@ -34,15 +31,13 @@ const CORE_VALUES = [
 ];
 
 const CoreValuesCard = () => {
-  // Màu nhấn Cyan (đồng bộ với WorkCard)
   const ACCENT_COLOR = "text-cyan-600 dark:text-cyan-400";
   const DIVIDER_COLOR = "border-gray-300 dark:border-gray-600";
 
   return (
-    // Card bao ngoài
     <div
       className="laptop:col-span-1 p-6 rounded-xl bg-gray-100 dark:bg-gray-800 shadow-xl 
-                       border border-gray-300 dark:border-gray-700 h-fit" // h-fit giúp card không quá dài
+                       border border-gray-300 dark:border-gray-700 h-fit"
     >
       <h2 className="text-2xl font-bold mb-6 text-black dark:text-white">
         My Core Values
