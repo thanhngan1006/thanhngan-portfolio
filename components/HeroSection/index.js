@@ -1,5 +1,3 @@
-// /components/HeroSection.jsx
-
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
@@ -30,68 +28,6 @@ const HeroSection = ({ name, role, tags, about, imageSrc }) => {
       ? tags.flatMap((tag) => [tag, 1500])
       : defaultTags.flatMap((tag) => [tag, 1500])
   ).slice(0, -1);
-
-  //   return (
-  //     <section className="flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-6 py-12">
-  //       {/* Cột 1: Ảnh đại diện */}
-  //       <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 relative">
-  //         <div
-  //           className={`w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden
-  //                       border-2 ${BORDER_COLOR_CLASS} shadow-xl
-  //                       transition duration-500 ease-in-out transform hover:scale-105 ${ACCENT_SHADOW_CLASS}
-  //                       relative`}
-  //         >
-  //           <Image
-  //             src={imageSrc}
-  //             alt={name || "Vo Thi Thanh Ngan"}
-  //             layout="fill"
-  //             objectFit="cover"
-  //             priority={true}
-  //           />
-  //         </div>
-  //       </div>
-
-  //       {/* Cột 2: Thông tin giới thiệu */}
-  //       <div className="md:w-1/2 text-center md:text-left">
-  //         <h1 className="text-4xl sm:text-6xl font-extrabold mb-2 text-white">
-  //           Hi, I&apos;m{" "}
-  //           <span className={ACCENT_COLOR_CLASS}>{name || "Thanh Ngan"}</span>
-  //         </h1>
-
-  //         <h3 className="text-xl sm:text-3xl font-semibold mb-6 text-gray-200">
-  //           I&apos;m a{" "}
-  //           <span className={ACCENT_COLOR_CLASS}>
-  //             <TypeAnimation
-  //               sequence={animationSequence}
-  //               speed={50}
-  //               repeat={Infinity}
-  //             />
-  //           </span>
-  //         </h3>
-
-  //         <p className="text-sm sm:text-lg mb-8 text-gray-400 max-w-lg md:max-w-none">
-  //           {about ||
-  //             "Aspiring Frontend Developer passionate about creating responsive, user-friendly interfaces for both web and mobile applications. Seeking opportunities to apply modern frameworks and grow in a collaborative development environment."}
-  //         </p>
-
-  //         <Socials className="mb-6 flex justify-center md:justify-start" />
-
-  //         <Link href="#contact" passHref legacyBehavior>
-  //           <Button
-  //             type="primary"
-  //             className={`!bg-cyan-500 text-black font-bold py-3 px-8
-  //                         hover:!bg-cyan-600 transition duration-300 ${ACCENT_SHADOW_CLASS}
-  //                         focus:outline-none focus:ring-4 focus:ring-cyan-500 focus:ring-opacity-50`}
-  //           >
-  //             Hire Me
-  //           </Button>
-  //         </Link>
-  //       </div>
-  //     </section>
-  //   );
-  // };
-
-  // export default HeroSection;
 
   return (
     // Toàn bộ Hero Section sẽ có nền đen hoặc xám đậm
