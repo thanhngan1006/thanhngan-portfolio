@@ -34,7 +34,7 @@ const SkillsSection = () => {
 
         <p className="text-lg text-gray-500 dark:text-gray-400 max-w-lg text-center">
           I am striving to never stop learning and improving. These are the
-          tools I use to build modern, scalable applications.
+          tools I use to build modern, scalable webs or applications.
         </p>
       </div>
 
